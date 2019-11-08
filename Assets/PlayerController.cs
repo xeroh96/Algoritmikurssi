@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
             curLoc.z += 1 * Time.fixedDeltaTime;
         if (Input.GetKey(KeyCode.S))
             curLoc.z -= 1 * Time.fixedDeltaTime;
+        if (Input.GetKey(KeyCode.R))
+            SceneManager.LoadScene("SampleScene");
 
         transform.position = curLoc;
 
