@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class SC_NPCFollow : MonoBehaviour
+    
 {
     public Transform transformToFollow;
     NavMeshAgent agent;
+    
     // Start is called before the first frame update
     void Start()
     {

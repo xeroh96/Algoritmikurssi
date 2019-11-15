@@ -32,4 +32,11 @@ public class Health : MonoBehaviour
         
 
     }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "NPC")
+        {
+            currenthp -= 10;
+        }
+    }
 }

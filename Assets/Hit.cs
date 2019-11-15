@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hit : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class Hit : MonoBehaviour
     {
         oPlayer = GameObject.FindGameObjectWithTag("oPlayer");
         playerHealth = oPlayer.GetComponent<Health>();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "oPlayer")
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
     // Update is called once per frame
@@ -50,7 +59,7 @@ public class Hit : MonoBehaviour
         
         if(playerHealth.currenthp > 0)
         {
-            playerHealth.Takedamage(attackDamage);
+            playerHealth.currenthp -= 10;
         }
     }
 }
