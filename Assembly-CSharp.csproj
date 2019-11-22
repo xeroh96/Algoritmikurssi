@@ -61,15 +61,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\back_forth.cs" />
-    <Compile Include="Assets\Health.cs" />
-    <Compile Include="Assets\Hit.cs" />
-    <Compile Include="Assets\Movement.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\Rotate.cs" />
-    <Compile Include="Assets\SC_NPCFollow.cs" />
-    <Compile Include="Assets\SmoothFollow.cs" />
-    <Compile Include="Assets\Spawn.cs" />
+    <Compile Include="Assets\Camera\Rotate.cs" />
+    <Compile Include="Assets\Camera\Shot.cs" />
+    <Compile Include="Assets\Camera\ShotZone.cs" />
+    <Compile Include="Assets\Camera\SmoothFollow.cs" />
+    <Compile Include="Assets\NPC\Hit.cs" />
+    <Compile Include="Assets\NPC\SC_NPCFollow.cs" />
+    <Compile Include="Assets\NPC\Spawn.cs" />
+    <Compile Include="Assets\Player\Health.cs" />
+    <Compile Include="Assets\Player\Movement.cs" />
+    <Compile Include="Assets\Player\PlayerController.cs" />
+    <Compile Include="Assets\Walls_etc\back_forth.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/petrihie/Downloads/Algoritmikurssi/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

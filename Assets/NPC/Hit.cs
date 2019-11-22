@@ -14,13 +14,13 @@ public class Hit : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        oPlayer = GameObject.FindGameObjectWithTag("oPlayer");
+        oPlayer = GameObject.FindGameObjectWithTag("Player");
         playerHealth = oPlayer.GetComponent<Health>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "oPlayer")
+        if(collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("SampleScene");
         }
