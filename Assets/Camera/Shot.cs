@@ -6,27 +6,27 @@ public class Shot : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Vector3 focalpoint;
+    public Vector3 focalPoint;
 
     public void CutToShot()
     {
-        //transform.LookAt(focalpoint);
+        transform.LookAt(focalPoint);
         Camera.main.transform.localPosition = transform.position;
         Camera.main.transform.localRotation = transform.rotation;
     }
 
-    private void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
         if(!Application.isPlaying)
         {
             CutToShot();
         }
     }
-    /*
-    private void OnDrawGizmos()
+    
+    void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, focalpoint);
+        Gizmos.DrawLine(transform.position, focalPoint);
     }
-    */
+    
 }
