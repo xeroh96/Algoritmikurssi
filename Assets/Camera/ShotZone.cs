@@ -9,7 +9,7 @@ public class ShotZone : MonoBehaviour
     {
        if (c.CompareTag("Player"))
         {
-            targetShot.CutToShot();
+        //targetShot.CutToShot();
         }
     }
 

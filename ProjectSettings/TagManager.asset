@@ -6,6 +6,9 @@ TagManager:
   tags:
   - NPC
   - Playe
+  - enterZone
+  - Camera2
+  - Camera Two
   layers:
   - Default
   - TransparentFX
