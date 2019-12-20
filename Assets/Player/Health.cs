@@ -19,10 +19,6 @@ public class Health : MonoBehaviour
     {
         currenthp -= amount;
 
-        if(currenthp <=0&&!isDead)
-        {
-            Death();
-        }
     }
 
     void Death()
@@ -37,6 +33,11 @@ public class Health : MonoBehaviour
         if (collision.gameObject.tag == "NPC")
         {
             currenthp -= 10;
+        }
+
+        if (currenthp <= 0 && !isDead)
+        {
+            Death();
         }
     }
 }
